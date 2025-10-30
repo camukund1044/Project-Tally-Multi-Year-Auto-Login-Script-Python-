@@ -1,16 +1,34 @@
-🧾 Project: Tally Multi-Year Auto Login Script (Python)
+import pyautogui
+import time
+import pandas as pd
+df=pd.read_excel('E:\\python\\tally_py.xlsx')
+time.sleep(20)
+pyautogui.hotkey('alt', 'tab')
 
-Every finance professional using Tally often needs to log in to multiple financial years manually, which can be time-consuming.
-To save time, I developed a Python automation script that automatically opens multiple year-wise company files in Tally Software.
-
-To use this script:
-
-Keep Tally open on your system.
-
-Arrange your windows so that you can switch between the Python script and the Tally screen using Ctrl + Tab.
-
-The script will then automatically open previous-year files one by one.
-
-You can easily modify the code to set the file paths for your previous-year data, ensuring smooth automation based on your Tally data structure.
-
-Feel free to contact me if you need assistance or customization support.
+time.sleep(5)
+for i in df.itertuples():
+    pyautogui.press("f3")
+    pyautogui.write("Select Company")
+    #pyautogui.press("up")
+    #pyautogui.press("up")
+    pyautogui.press("enter")
+    time.sleep(3)
+    pyautogui.write("Specify Path")
+    #pyautogui.press("up")
+    #pyautogui.press("up")
+    #pyautogui.press("up")
+    pyautogui.press("enter")
+    time.sleep(3)
+    pyautogui.write("Previous:")
+    pyautogui.press("enter")
+    time.sleep(3)
+    #pyautogui.press("enter")
+    pyautogui.write(i.year)
+    pyautogui.press("enter")
+    #pyautogui.press("enter")
+    pyautogui.write("Username")
+    pyautogui.press("enter")
+    pyautogui.write("password")
+    #pyautogui.write(i.Date.strftime('%d-%m-%Y'))
+    pyautogui.press("enter")
+    time.sleep(20)
