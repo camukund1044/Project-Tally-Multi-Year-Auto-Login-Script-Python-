@@ -1,0 +1,2 @@
+# Project-Tally-Multi-Year-Auto-Login-Script-Python-
+Every finance professional using Tally needs to log in to multiple financial years. To save time, I created a Python script that automates opening multi-year files in Tally. Keep Tally open, use Ctrl+Tab to switch, and the script opens previous-year files automatically. You can easily modify the code to set file paths for your previous-year data.
