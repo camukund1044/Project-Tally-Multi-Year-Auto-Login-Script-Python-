@@ -2,6 +2,7 @@
 import pyautogui
 import time
 import pandas as pd
+# Change File location as per your requirement
 df=pd.read_excel('E:\\python\\tally_py.xlsx')
 time.sleep(20)
 pyautogui.hotkey('alt', 'tab')
