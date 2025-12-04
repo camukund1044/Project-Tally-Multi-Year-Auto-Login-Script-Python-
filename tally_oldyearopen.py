@@ -5,7 +5,7 @@ import pandas as pd
 # 1. Change File location as per your requirement
 df=pd.read_excel('E:\\python\\tally_py.xlsx')
 time.sleep(20)
-# 1.1 This will change to next tab from python script. You should ensure that the tally login should be in next tab to python programme.
+# 1.1 This will change to next tab from python script. You should ensure that the opened tally software should be in next tab to python programme.
 pyautogui.hotkey('alt', 'tab')
 
 
