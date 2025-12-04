@@ -25,8 +25,10 @@ for i in df.itertuples():
     time.sleep(3)
     pyautogui.write(i.year)
     pyautogui.press("enter")
+    #5. User name of tally file. I assumed that you have same user name and password across all the years.
     pyautogui.write("username")
     pyautogui.press("enter")
     pyautogui.write("password")
     pyautogui.press("enter")
+    #6. Wait till the file is loading. You may increase decrease the time based on size of your file, lower time will generate errors.
     time.sleep(20)
